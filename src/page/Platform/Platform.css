@@ -1,0 +1,42 @@
+.container {
+    width: 1200px;
+    margin: 81px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+.card {
+    width: 210px;
+    height: 326px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    border-radius: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.photo {
+    width: 190px;
+    height: 180px;
+    margin: 10px auto 10px;
+    background-color: #00a6f3;
+    text-align: center;
+    line-height: 180px;
+    color: white;
+    position: relative;
+}
+.tag {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 20px;
+    width: 40px;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+}
+.text {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
