@@ -2,6 +2,11 @@
     height: 240px;
     width: 1200px;
     margin: 20px auto 20px;
+    background-color: #00a6f3;
+    color: #fff;
+    text-align: center;
+    line-height: 240px;
+    font-size: 30px;
 }
 .container {
     margin-top: 80px;
@@ -12,4 +17,29 @@
     width: 715px;
     height: 785px;
     position: relative;
+}
+.tip {
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+}
+.svg {
+    width: 715px;
+    height: 785px;
+    display: block;
+}
+.tableContainer {
+    width: 1200px;
+    margin: 20px auto 0;
+    height: 800px;
+    background-color: #00a6f3;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    line-height: 800px;
 }
