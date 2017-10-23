@@ -19,7 +19,8 @@ const enhancer = compose(
 )
 
 const store = createStore(reducer, {
-    platformLoading: true
+    platformLoading: true,
+    currentCity: '广东省'
 }, enhancer)
 
 sagaMiddleware.run(saga)
