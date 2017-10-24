@@ -1,11 +1,11 @@
-import { takeEvery, call } from 'redux-saga/effects'
+// import { takeEvery, call } from 'redux-saga/effects'
 
-function* clickCity(action) {
-    yield call(console.log(action.payload))
-}
+// function* clickCity(action) {
+//     yield call(console.log(action.payload))
+// }
 
 export function* saga() {
     yield* [
-        takeEvery('CLICK_CITY',clickCity)
+        // takeEvery('CLICK_CITY',clickCity)
     ]
 }

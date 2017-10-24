@@ -1,0 +1,11 @@
+.container {
+    margin: 0 auto;
+    /* width: 1106px; */
+    /* height: 791px; */
+    position: relative;
+}
+.svg {
+    /* width: 1106px; */
+    /* height: 791px; */
+    display: block;
+}

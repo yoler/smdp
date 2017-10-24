@@ -1,4 +1,4 @@
-.header {
+.container {
     position: fixed;
     top: 0;
     left: 0;
@@ -12,12 +12,12 @@
 }
 .title {
     height: 80px;
-    width: 250px;
+    /* width: 270px; */
     color: #00a6f3;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    margin-left: 10px;
+    /* justify-content: space-between; */
+    margin-left: 20px;
 }
 .text {
     font-size: 25px;
@@ -26,6 +26,7 @@
     height: 58px;
     width: 62px;
     background-image: url(./logo_small.png);
+    margin-right: 20px;
 }
 .nav {
     margin-left: 100px;

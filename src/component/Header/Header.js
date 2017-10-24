@@ -5,10 +5,10 @@ import styles from './Header.css'
 class Header extends Component {
     render() {
         return (
-            <header className={styles.header}>
+            <header className={styles.container}>
                 <section className={styles.title}>
                     <div className={styles.logo}></div>
-                    <div className={styles.text}>精患管理平台</div>
+                    <div className={styles.text}>严重精患管理平台</div>
                 </section>
                 <nav className={styles.nav}>
                     <NavLink exact to='/' className={styles.navChild} activeClassName={styles.selected}>
@@ -25,7 +25,7 @@ class Header extends Component {
                     </NavLink>
                     <NavLink to='/two' className={styles.navChild} activeClassName={styles.selected}>
                         <div className={styles.navTag}>
-                            <i className="fa fa-briefcase" aria-hidden="true"></i>
+                            <i className="fa fa-desktop" aria-hidden="true"></i>
                         </div>
                         <div>在线办公</div>                        
                     </NavLink>
