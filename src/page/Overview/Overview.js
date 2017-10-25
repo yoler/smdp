@@ -10,6 +10,7 @@ import doumenqu from './doumenqu.json'
 
 import Survey from '../../component/Survey/Survey'
 import Map from '../../component/Map/Map'
+import Crumb from '../../component/Crumb/Crumb'
 
 class Overview extends Component {
     constructor(props) {
@@ -33,6 +34,7 @@ class Overview extends Component {
             this.props.currentCity === '珠海市' ? zhuhaishi : doumenqu
         return (
             <div style={{minHeight: document.documentElement.clientHeight - 162}} className={styles.container}>
+                <Crumb data={['广东省','珠海市','斗门区','斗门镇']}/>
                 <Survey city={this.props.currentCity}/>
                 {
                     this.state.showMap ? 
@@ -54,6 +56,7 @@ class Overview extends Component {
 }
 
 function mapStateToProps(state) {
+    console.log(state)
     return {...state}
 }
 

@@ -1,0 +1,27 @@
+.container {
+    height: 50px;
+    width: 1200px;
+    margin: 10px auto;
+    background-color: #fff;
+    border: 1px solid #efeded;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+.bread {
+    line-height: 48px;
+    margin-left: 20px;
+    color: #333;
+    display: flex;
+}
+.item {
+    cursor: pointer;
+    color: #b3b3b3;
+    font-size: 14px;
+}
+.item:hover {
+    color: #00a6f3;
+}
+.division {
+    margin: 0 10px;
+    color: #b3b3b3;    
+}

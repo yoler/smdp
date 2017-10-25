@@ -8,4 +8,4 @@ export const setPlatformLoading = () => {
     return {
         type: 'SET_PLATFORM_LOADING'
     }
-} 
+}

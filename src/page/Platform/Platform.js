@@ -6,6 +6,7 @@ import * as actions from '../../action/action'
 // import classNames from 'classnames/bind'
 import styles from './Platform.css'
 import Query from '../../component/Query/Query'
+import Pagination from '../../component/Pagination/Pagination'
 
 // let cx = classNames.bind(styles)
 
@@ -31,7 +32,7 @@ class Platform extends Component {
                     }}>
                         <i className="fa fa-spinner fa-pulse fa-4x fa-fw" aria-hidden="true"></i>
                     </div> :
-                    data.map((d,i) => 
+                    data.map((d,i) =>
                         <div key={i} className={styles.card}>
                             <div className={styles.photo}>
                                 <div className={styles.tag}>{`${d.level}级`}</div>
@@ -44,6 +45,7 @@ class Platform extends Component {
                         </div>
                     )
                 }
+                <Pagination total={8} defaultCurrent={1}/>
             </div>
         )
     }

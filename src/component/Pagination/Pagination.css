@@ -1,0 +1,22 @@
+.container {
+    height: 50px;
+    width: 1200px;
+    margin: 10px auto;
+    background-color: #fff;
+    border: 1px solid #efeded;
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.item:hover {
+    color: #00a6f3;
+}
