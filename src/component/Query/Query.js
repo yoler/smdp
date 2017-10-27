@@ -42,6 +42,7 @@ class Query extends Component {
                         <div className={styles.content}>
                             <div className={styles.title}>所属库</div>
                             <div className={styles.query}>
+                                <div className={styles.item}>待排查</div>
                                 <div className={styles.item}>在管</div>
                                 <div className={styles.item}>非在管</div>
                                 <div className={styles.item}>失访</div>
