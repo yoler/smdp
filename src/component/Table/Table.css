@@ -1,0 +1,86 @@
+.container {
+    width: 1200px;
+    border: 1px solid #efeded;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin-top: 10px;
+    display: flex;
+}
+.header {
+    width: 150px;
+    background-color: #00a6f3;
+}
+.title {
+    color: #fff;
+    background-color: #d5c9fb;
+    height: 50px;
+    text-align: center;
+    line-height: 48px;
+    font-size: 20px;
+    border: 1px solid #d1d1d1;
+    box-sizing: border-box;
+}
+.category {
+    color: #fff;
+    background-color: #9cb4d5;
+    height: 50px;
+    text-align: center;
+    line-height: 48px;
+    font-size: 18px;
+    border: 1px solid #d1d1d1;
+    box-sizing: border-box;
+}
+.content {
+    background-color: #00a6f3;
+    display: flex;
+}
+.items {
+    width: 100px;
+}
+.city {
+    height: 50px;
+    text-align: center;
+    line-height: 48px;
+    font-size: 18px;
+    border: 1px solid #d1d1d1;
+    box-sizing: border-box;
+    background-color: #9cb4d5;
+    color: #fff;
+}
+.item {
+    height: 50px;
+    text-align: center;
+    line-height: 48px;
+    font-size: 18px;
+    border: 1px solid #d1d1d1;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.arrow {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.left {
+    height: 50px;
+    width: 25px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+.right {
+    height: 50px;
+    width: 25px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+.left:hover {
+    color: #00a6f3;
+}
+.right:hover {
+    color: #00a6f3;
+}

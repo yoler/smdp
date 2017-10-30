@@ -11,6 +11,7 @@ import doumenqu from './doumenqu.json'
 import Survey from '../../component/Survey/Survey'
 import Map from '../../component/Map/Map'
 import Crumb from '../../component/Crumb/Crumb'
+import SectionOne from '../../component/SectionOne/SectionOne'
 
 class Overview extends Component {
     constructor(props) {
@@ -20,7 +21,7 @@ class Overview extends Component {
         }
     }
     componentDidMount() {
-        console.log('ok')
+        console.log('获取地图数据')
     }
     handleClick = (city,level) => {
         console.log(level)
@@ -30,7 +31,7 @@ class Overview extends Component {
         this.props.clickCity(city)
     }
     render() {
-        let data = this.props.currentCity === '广东省' ? guangdongsheng : 
+        let data = this.props.currentCity === '广东省' ? guangdongsheng :
             this.props.currentCity === '珠海市' ? zhuhaishi : doumenqu
         return (
             <div style={{minHeight: document.documentElement.clientHeight - 162}} className={styles.container}>
@@ -44,7 +45,7 @@ class Overview extends Component {
                     />
                     : null
                 }
-                <div className={styles.tableContainer}>图表板块一</div>
+                <SectionOne />
                 <div className={styles.tableContainer}>图表板块二</div>
                 <div className={styles.tableContainer}>图表板块三</div>
                 <div className={styles.tableContainer}>图表板块四</div>

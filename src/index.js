@@ -20,6 +20,7 @@ const enhancer = compose(
 
 const store = createStore(reducer, {
     platformLoading: true,
+    mapLoading: true,
     currentCity: '广东省'
 }, enhancer)
 
