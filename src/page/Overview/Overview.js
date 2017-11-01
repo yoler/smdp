@@ -12,6 +12,7 @@ import Survey from '../../component/Survey/Survey'
 import Map from '../../component/Map/Map'
 import Crumb from '../../component/Crumb/Crumb'
 import SectionOne from '../../component/SectionOne/SectionOne'
+import SectionTwo from '../../component/SectionTwo/SectionTwo'
 
 class Overview extends Component {
     constructor(props) {
@@ -46,7 +47,7 @@ class Overview extends Component {
                     : null
                 }
                 <SectionOne />
-                <div className={styles.tableContainer}>图表板块二</div>
+                <SectionTwo />
                 <div className={styles.tableContainer}>图表板块三</div>
                 <div className={styles.tableContainer}>图表板块四</div>
                 <div className={styles.tableContainer}>图表板块五</div>

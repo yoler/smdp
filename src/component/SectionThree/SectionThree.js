@@ -1,72 +1,52 @@
 import React, { Component } from 'react'
-import styles from './SectionOne.css'
+import styles from './SectionThree.css'
 
 import Table from '../Table/Table'
 
 const data = [
     {
         city: '广州市',
-        category: {
-            a: 1,b:2,c:3,d:4,e:5,f:6,g:7,h:8,i:9,j:10
-        }
+        a: 1,b:2,c:3,d:4,e:5,f:6,g:7,h:8,i:9,j:10
     },
     {
         city: '深圳市',
-        category: {
-            a: 1,b:2,c:3,d:4,e:5,f:6,g:7,h:8,i:9,j:10
-        }
+        a: 1,b:2,c:3,d:4,e:5,f:6,g:7,h:8,i:9,j:10
     },
     {
         city: '珠海市',
-        category: {
-            a: 1,b:2,c:3,d:4,e:5,f:6,g:7,h:8,i:9,j:10
-        }
+        a: 1,b:2,c:3,d:4,e:5,f:6,g:7,h:8,i:9,j:10
     },
     {
         city: '佛山市',
-        category: {
-            a: 1,b:2,c:3,d:4,e:5,f:6,g:7,h:8,i:9,j:10
-        }
+        a: 1,b:2,c:3,d:4,e:5,f:6,g:7,h:8,i:9,j:10
     },
     {
         city: '江门市',
-        category: {
-            a: 1,b:2,c:3,d:4,e:5,f:6,g:7,h:8,i:9,j:10
-        }
+        a: 1,b:2,c:3,d:4,e:5,f:6,g:7,h:8,i:9,j:10
     },
     {
         city: '湛江市',
-        category: {
-            a: 1,b:2,c:3,d:4,e:5,f:6,g:7,h:8,i:9,j:10
-        }
+        a: 1,b:2,c:3,d:4,e:5,f:6,g:7,h:8,i:9,j:10
     },
     {
         city: '茂名市',
-        category: {
-            a: 1,b:2,c:3,d:4,e:5,f:6,g:7,h:8,i:9,j:10
-        }
+        a: 1,b:2,c:3,d:4,e:5,f:6,g:7,h:8,i:9,j:10
     },
     {
         city: '肇庆市',
-        category: {
-            a: 1,b:2,c:3,d:4,e:5,f:6,g:7,h:8,i:9,j:10
-        }
+        a: 1,b:2,c:3,d:4,e:5,f:6,g:7,h:8,i:9,j:10
     },
     {
         city: '惠州市',
-        category: {
-            a: 1,b:2,c:3,d:4,e:5,f:6,g:7,h:8,i:9,j:10
-        }
+        a: 1,b:2,c:3,d:4,e:5,f:6,g:7,h:8,i:9,j:10
     },
     {
         city: '梅州市',
-        category: {
-            a: 1,b:2,c:3,d:4,e:5,f:6,g:7,h:8,i:9,j:10
-        }
+        a: 1,b:2,c:3,d:4,e:5,f:6,g:7,h:8,i:9,j:10
     },
 ]
 
-class SectionOne extends Component {
+class SectionThree extends Component {
     render() {
         return (
             <div className={styles.container}>
@@ -80,4 +60,4 @@ class SectionOne extends Component {
     }
 }
 
-export default SectionOne
+export default SectionThree

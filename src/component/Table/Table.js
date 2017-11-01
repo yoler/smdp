@@ -2,6 +2,27 @@ import React, { Component } from 'react'
 import styles from './Table.css'
 
 class Table extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            leftEnable: false,
+            rightEnable: true,
+            totalPage: Math.ceil(this.props.data.length / 10)
+        }
+    }
+    componentDidMount() {
+        console.log(this.state.totalPage)
+    }
+    leftSilp() {
+        if(this.state.leftEnable) {
+            console.log('left slip')
+        } else {
+            return
+        }
+    }
+    rightSilp() {
+        console.log('right slip')
+    }
     render() {
         return (
             <div className={styles.container}>
@@ -16,27 +37,22 @@ class Table extends Component {
                 <div className={styles.content}>
                     {
                         this.props.data.map((v,i) =>
-                            <div className={styles.items}>
+                            <div key={i} className={styles.items}>
                                 <div className={styles.city}>{v.city}</div>
-                                <div className={styles.item}>{v.a}</div>
-                                <div className={styles.item}>{v.b}</div>
-                                <div className={styles.item}>{v.c}</div>
-                                <div className={styles.item}>{v.d}</div>
-                                <div className={styles.item}>{v.e}</div>
-                                <div className={styles.item}>{v.f}</div>
-                                <div className={styles.item}>{v.g}</div>
-                                <div className={styles.item}>{v.h}</div>
-                                <div className={styles.item}>{v.i}</div>
-                                <div className={styles.item}>{v.j}</div>
+                                {
+                                    Object.keys(v.category).map((d,j) =>
+                                        <div key={j} className={styles.item}>{v.category[d]}</div>
+                                    )
+                                }
                             </div>
                         )
                     }
                 </div>
                 <div className={styles.arrow}>
-                    <div className={styles.left}>
+                    <div className={this.state.leftEnable ? styles.left : styles.disabled} onClick={() => this.leftSilp()}>
                         <i className="fa fa-angle-left" aria-hidden="true"></i>
                     </div>
-                    <div className={styles.right}>
+                    <div className={this.state.rightEnable ? styles.right : styles.disabled} onClick={() => this.rightSilp()}>
                         <i className="fa fa-angle-right" aria-hidden="true"></i>
                     </div>
                 </div>
